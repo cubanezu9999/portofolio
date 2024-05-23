@@ -1,0 +1,79 @@
+.container {
+  width: 100vw;
+  height: 93vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.picture {
+  width: 23em;
+  height: 23em;
+  border-radius: 50%;
+  transition: 0.2 s all linear;
+  margin-bottom: 4em;
+}
+
+.picture:hover {
+  scale: 1.1;
+}
+.description {
+  width: 70vw;
+  color: white;
+  font-size: 1.5em;
+  font-family: Montserrat;
+}
+
+.description:hover {
+  color: rgb(255, 0, 0);
+}
+.link {
+  color: white;
+  transition: 0.2 s all linear;
+  font-family: Montserrat;
+}
+
+.link:hover {
+  scale: 1.1;
+  color: rgb(255, 0, 0);
+}
+.links {
+  margin-top: 3em;
+  display: flex;
+  gap: 7rem;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .picture {
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    transition: 0.2 s all linear;
+    margin-bottom: 1em;
+  }
+  .description {
+    width: 65vw;
+    color: white;
+    font-size: 0.9em;
+    font-family: Montserrat;
+  }
+  .links {
+    margin-top: 1em;
+    display: flex;
+    gap: 6rem;
+    font-size: 0.9em;
+  }
+  .container {
+    width: 105vw;
+    height: 105vh;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

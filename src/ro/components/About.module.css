@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  background-color: black;
+  width: 96vw;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 2em;
+  color: white;
+  font-family: Montserrat;
+}
+
+.text {
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+  max-width: 70%;
+  font-family: Montserrat;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48em;
+}
+
+.label {
+  color: white;
+  font-family: Montserrat;
+}
+
+.inputtext {
+  padding: 5px 5px;
+  line-height: 12px;
+
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.textarea {
+  height: 10em;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.submit {
+  margin-left: 26em;
+  width: 4em;
+  color: white;
+  font-family: Montserrat;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.submit:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70vw;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 112vw;
+    height: 110vh;
+    background-color: black;
+  }
+  .text {
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 95%;
+    font-family: Montserrat;
+  }
+  .title {
+    font-size: 1em;
+    margin-top: 1em;
+    color: white;
+    font-family: Montserrat;
+  }
+  .submit {
+    margin-left: 13em;
+    margin-bottom: 20px;
+    width: 4em;
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
